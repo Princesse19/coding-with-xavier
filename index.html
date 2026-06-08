@@ -9,6 +9,7 @@
         <script src="https://kit.fontawesome.com/8fee40d627.js" crossorigin="anonymous"></script>
     </head>
     <body>
+       <button id="theme-toggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode">🌙</button>
        <div id="header">
         <div class="container">
             <nav>
@@ -23,54 +24,70 @@
                 </ul>
                 <i class="fa-regular fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>React Native App Developer</p>
-                <h1>Hi, I'm <span>Princesse </span><br>from Rwanda</h1>
+            <div class="hero-glass-panel">
+                <div class="header-content">
+                    <div class="header-text">
+                        <span class="hero-badge">Available for work</span>
+                        <p>React Native App Developer</p>
+                        <h1>Hi, I'm <span>Princesse</span><br>from Rwanda</h1>
+                        <a href="#contact" class="btn hero-cta">Get in Touch</a>
+                    </div>
+                    <div class="header-img">
+                        <div class="img-glow-ring">
+                            <img src="images/me.png" alt="Princesse">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- --------------------------about------------------------------ -->
     <div id="about">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/me2.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
+            <div class="section-glass">
+                <div class="row">
+                    <div class="about-col-1">
+                        <div class="about-img-ring">
+                            <img src="images/me1.png" alt="Princesse">
+                        </div>
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
 
-                    <p>I hold an A1 diploma in Information Systems.<br>
-                        My technical skills include React Native, React, Next.js, Node.js, and Firebase,<br>
-                        built on a strong foundation in HTML, CSS, and JavaScript.
-                    </p>
-                    <p>I enjoy building real-world applications and solving problems<br>
-                        through hands-on experience.
-                    </p>
-                    <p>I am a committed and focused learner who strives to deliver quality results —<br>
-                        ready to contribute, grow, and make an impact professionally.
-                    </p>
+                        <p>I hold an A1 diploma in Information Systems.<br>
+                            My technical skills include React Native, React, Next.js, Node.js, and Firebase,<br>
+                            built on a strong foundation in HTML, CSS, and JavaScript.
+                        </p>
+                        <p>I enjoy building real-world applications and solving problems<br>
+                            through hands-on experience.
+                        </p>
+                        <p>I am a committed and focused learner who strives to deliver quality results —<br>
+                            ready to contribute, grow, and make an impact professionally.
+                        </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>App Development</span><br>Developing cross-platform mobile applications using React Native</li>
-                            <li><span>Web Development</span><br>Building modern and responsive websites using Next.js</li>
-                            <li><span>Backend Development</span><br>Managing backend services, authentication, and databases using Node.js and Firebase</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Dec 2020 - April 2021</span><br>IT internship at kLab</li>
-                            <li><span>Mar 2026 - June 2021</span><br>React Native internship at SOLVIT AFRICA</li>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2018 - 2021</span><br>IS Diploma at Akilah Institute</li>
-                        </ul>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>App Development</span><br>Developing cross-platform mobile applications using React Native</li>
+                                <li><span>Web Development</span><br>Building modern and responsive websites using Next.js</li>
+                                <li><span>Backend Development</span><br>Managing backend services, authentication, and databases using Node.js and Firebase</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Dec 2020 - April 2021</span><br>IT internship at kLab</li>
+                                <li><span>Mar 2026 - June 2021</span><br>React Native internship at SOLVIT AFRICA</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2018 - 2021</span><br>IS Diploma at Akilah Institute</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,109 +96,103 @@
 
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    <h2>App Development</h2>
-                    <p>
-        Developing cross-platform mobile applications using React Native.
-        Building smooth and responsive mobile user experiences.
-        Connecting apps with backend services and APIs.
-        Ensuring performance and usability across devices.
-    </p>
-                       <a href="#">Learn more</a>
+            <div class="section-glass">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h2>App Development</h2>
+                        <p>Developing cross-platform mobile applications using React Native.
+                        Building smooth and responsive mobile user experiences.
+                        Connecting apps with backend services and APIs.
+                        Ensuring performance and usability across devices.</p>
+                        <a href="#">Learn more</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-globe"></i>
                         <h2>Web Development</h2>
-                         <p>
-        Building modern and responsive websites using Next.js.
-        Creating fast, scalable, and user-friendly web applications.
-        Integrating APIs and backend services for dynamic functionality.
-        Ensuring performance and clean code structure.
-    </p>
-                           <a href="#">Learn more</a>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-server"></i>
-                            <h2>Backend Development</h2>
-                           <p>
-        Building backend systems using Node.js and Firebase.
-        Managing authentication, databases, and cloud services.
-        Creating APIs to connect mobile and web applications.
-        Ensuring secure and scalable application architecture.
-    </p>
-                                <a href="#">Learn more</a>
-                            </div>
-                        </div>
+                        <p>Building modern and responsive websites using Next.js.
+                        Creating fast, scalable, and user-friendly web applications.
+                        Integrating APIs and backend services for dynamic functionality.
+                        Ensuring performance and clean code structure.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-server"></i>
+                        <h2>Backend Development</h2>
+                        <p>Building backend systems using Node.js and Firebase.
+                        Managing authentication, databases, and cloud services.
+                        Creating APIs to connect mobile and web applications.
+                        Ensuring secure and scalable application architecture.</p>
+                        <a href="#">Learn more</a>
                     </div>
                 </div>
- <!-- ----------------------Portfolio----------------------------------- --> 
+            </div>
+    </div>
+    <!-- ----------------------Portfolio----------------------------------- --> 
  <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/farmer pic.jpg">
-                <div class="layer">
-                    <h3>Hotpot App</h3>
-                    <p>Hotpot is a mobile food ordering application developed by our team 
-                        using React Native for the frontend, Django for the backend, and 
-                        modern UI/UX design practices. The application allows customers to 
-                        browse menus, order food, track orders, and manage their profiles, 
-                        while providing administrators with tools to manage menu items, orders, 
-                        and restaurant operations efficiently.</p>
-                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/learning pic.jpg">
-                <div class="layer">
-                    <h3>Weather App</h3>
-                    <p>Developed a Weather Application using React Native to strengthen mobile development
-                         skills, API integration, state management, and responsive UI design.</p>
+        <div class="section-glass">
+            <h1 class="sub-title">My projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/hotpot.jpeg">
+                    <div class="layer">
+                        <h3>Hotpot App</h3>
+                        <p>Hotpot is a mobile food ordering application developed by our team
+                            using React Native for the frontend, Django for the backend, and
+                            modern UI/UX design practices. Customers can browse menus, order food,
+                            track orders, and manage their profiles.</p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/learning pic.jpg">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Developed a Weather Application using React Native to strengthen mobile development skills, API integration, state management, and responsive UI design.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/blog pic.jpg">
+                    <div class="layer">
+                        <h3>My blog / My writing</h3>
+                        <p>Positive effects of time management as a software engineer.
+                            Why self-discipline matters. Why you should not give up.
+                            What you need to know about Web Design.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="work">
-                <img src="images/blog pic.jpg">
-                <div class="layer">
-                    <h3>My blog/My writing</h3>
-                    <p>Positive effects of time management as a software engineer.
-                        Why it is good to have self-discipline for one to reach a concrete goal.
-                        Why you should not give up.
-                        This is what you need to know about Web Design.
-                    </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
+            <a href="#" class="btn">See more</a>
         </div>
-        <a href="#" class="btn">See more</a> 
     </div>
  </div>
  <!-- -----------------contact-------------------------- -->
  <div id="contact">
     <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>munyanezaprincesserita@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>+250-780-646-865</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/princesse-munyaneza-11682a179/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://twitter.com/munyaneprincess"><i class="fa-brands fa-twitter"></i></a>
+        <div class="section-glass">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>munyanezaprincesserita@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+250-780-646-865</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/princesse-munyaneza-11682a179/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/munyaneprincess"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/cv1.pdf" download class="btn btn2">Download CV</a>
                 </div>
-                <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -189,6 +200,35 @@
         <p>copyright @ Princesse.Made with <i class="fa-solid fa-heart"></i> Princesse Creation</p>
     </div>
  </div>              
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.getElementById('theme-toggle');
+            body.classList.toggle('light-mode');
+            btn.textContent = body.classList.contains('light-mode') ? '🌙' : '☀️';
+            localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
+        }
+        (function () {
+            if (localStorage.getItem('theme') === 'light') {
+                document.body.classList.add('light-mode');
+                document.getElementById('theme-toggle').textContent = '🌙';
+            } else {
+                document.getElementById('theme-toggle').textContent = '☀️';
+            }
+        })();
+    </script>
+
+    <script>
+        document.querySelectorAll('.work').forEach(function(card) {
+            card.addEventListener('click', function() {
+                document.querySelectorAll('.work').forEach(function(c) {
+                    if (c !== card) c.classList.remove('active');
+                });
+                card.classList.toggle('active');
+            });
+        });
+    </script>
+
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
